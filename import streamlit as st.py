@@ -4,8 +4,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.schema import StrOutputParser
 import openai
-openai.api_key = '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'
-
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 st.set_page_config(
     page_title="유튜브를 블로그로",
     page_icon="😀",
